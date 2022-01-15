@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--Very-dark-blue-main, "black");
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--Very-dark-blue-card);
+}
+
+p {
+  color: var(--Soft-blue);
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 23px;
+  color: var(--White);
+}
+.cant-text {
+  color: var(--Cyan);
+  display: inline-block;
+}
+.days-cant-text {
+  display: inline-block;
+}
+.icon {
+  vertical-align: sub;
+}
+
+.days-cant {
+  float: right;
+}
+hr {
+  color: var(--Very-dark-blue-line);
+}
+
+.footer-text-name {
+  color: white;
+}
+
+.footer-text-name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+span {
+  color: var(--Soft-blue);
+}
+
+.avatar {
+  max-width: 10%;
+  border-color: var(--White);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.equilibrium,
+.card {
+  border-radius: 3%;
+}
+.card-header-img {
+  background-color: var(--Cyan);
+  border-radius: 4%;
+  position: relative;
+  transition: all 2000ms ease-out;
+}
+.image-view {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: all 500ms ease-out;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-header-img:hover > .image-equilibrium {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.card-header-img:hover > .image-view {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.card-body-content > h4:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
