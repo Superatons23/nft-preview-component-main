@@ -46,8 +46,13 @@ h4 {
 .days-cant {
   float: right;
 }
+
 hr {
   color: var(--Very-dark-blue-line);
+}
+
+.info {
+  border-bottom: 2px solid var(--Very-dark-blue-line);
 }
 
 .footer-text-name {
